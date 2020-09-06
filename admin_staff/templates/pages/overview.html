@@ -1,0 +1,96 @@
+{% extends 'pages/main.html' %}
+{%load static%}
+
+{%block content%}
+            <section class="content content-defalut">
+            <div class="container container-overview"> 
+                <h2><i class="fas fa-caret-right"></i> Tổng quan bài viết </h2>
+                <div class="overview-posts-viewer-likes">
+                    <div class="box box-posts">
+                        <div class="my-overview-posts"> 
+                            <h3>Tổng số bài viết</h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-feather-alt"></i> 120 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-viewer">
+                        <div class="my-overview-viewer"> 
+                            <h3>Tổng số người xem </h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-eye"></i> 10001 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-likes">
+                        <div class="my-overview-likes"> 
+                            <h3>Tổng số người thích</h3>    
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-thumbs-up"></i> 1210 </p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container container-advertisement">
+                <h2><i class="fas fa-caret-right"></i> Tổng quan lượt click quảng cáo </h2>
+                <div class="overview-advertisement">
+                    <div class="box box-advertisement-all">
+                        <div class="my-advertisement-all"> 
+                            <h3>Tổng số click</h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-mouse"></i> 1189 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-advertisement-month">
+                        <div class="my-advertisement-month"> 
+                            <h3>Tổng số click trong tháng </h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-mouse"></i> 164 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-advertisement-day">
+                        <div class="my-advertisement-day"> 
+                            <h3>Tổng số click trong ngày</h3>    
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-mouse"></i> 23 </p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container container-comment">
+                <h2><i class="fas fa-caret-right"></i> Tổng quan lượt bình luận </h2>
+                <div class="overview-comment">
+                    <div class="box box-commemt-all">
+                        <div class="my-comment-all"> 
+                            <h3>Tổng số bình luận</h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-comment"></i> 4907</p>    
+                        </div>
+                    </div>
+                    <div class="box box-comment-month">
+                        <div class="my-comment-month"> 
+                            <h3>Tổng số bình luận trong tháng </h3>
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-comment"></i> 508 </p>    
+                        </div>
+                    </div>
+                    <div class="box box-comment-day">
+                        <div class="my-comment-day"> 
+                            <h3>Tổng số bình luận trong ngày</h3>    
+                        </div>
+                        <div class="count"> 
+                            <p><i class="fas fa-comment"></i> 43 </p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{%endblock content%}

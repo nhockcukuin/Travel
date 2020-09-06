@@ -1,0 +1,13 @@
+{% extends 'pages/main.html' %}
+
+{%block content%}
+    
+    <section class="content content-defalut">
+    <h2>Form Bài Viết</h2>
+    <form action="" method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input name="" class="btn btn-primary" type="submit" value="Lưu">
+    </form>
+    </section>
+{%endblock%}

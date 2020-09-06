@@ -1,0 +1,30 @@
+{% extends 'pages/main.html' %}
+
+
+{%block content%}
+    <section class="content content-defalut">
+            <div class="container container-my-info">
+                <h1> Thông tin người dùng </h1>
+                <div class="box box-search"> 
+                    <form action="">
+                        <input type="text" name="data-search">
+                        <button type="submit" name="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="box box-table">
+                    <table>
+                        <tr>
+                            <td> Stt </td>
+                            <td> Tài khoản </td>
+                            <td> Chức năng </td>
+                        </tr>
+                        <tr>
+                           <td> 1 </td>
+                           <td> demo_user </td>
+                           <td><a href="./detail-user.html"> Chi Tiết </a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+{%endblock content%}

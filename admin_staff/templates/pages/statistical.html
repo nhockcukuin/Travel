@@ -1,0 +1,44 @@
+{% extends 'pages/main.html' %}
+
+
+{%block content%}
+    <section class="content content-defalut">
+           <div class="container container-statistical"> 
+               <div class="statistical-header">
+                    <div class="header-title">
+                        <h1><i class="fas fa-caret-right icon-arrow"></i> Bảng thống kê </h1>
+                    </div>
+                    <div class="header-search">
+                            <form action=""> 
+                                <input type="text" name="">
+                                <button type="submit" name="submit"><i class="fas fa-search icon-search"></i></button>
+                            </form>
+                    </div>
+               </div>
+               <div class="statistical-body">
+                    <div class="body-table-1">
+                        <table>
+                            <tr>
+                                <td> STT </td>
+                                <td> Tổng số bình luận </td>
+                                <td> Tổng số bài viết </td>
+                                <td> Tổng số người xem </td>
+                                <td> Tổng số người thích </td>
+                                <td> Tổng số người dùng </td>
+                                <td> Tổng số tài khoản bị khóa </td>
+                            </tr>
+                            <tr>
+                                <td> 1 </td>
+                                <td> 2435</td>
+                                <td> 3634 </td>
+                                <td> 353632 </td>
+                                <td> 345 </td>
+                                <td> 345 </td>
+                                <td> 24 </td>
+                            </tr>
+                        </table>
+                    </div>
+               </div>
+           </div>
+        </section>
+{%endblock content%}

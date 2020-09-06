@@ -1,0 +1,32 @@
+{% extends 'pages/main.html' %}
+
+
+{%block content%}
+    <section class="content content-defalut">
+           <div class="container container-comment">
+               <div class="comment comment-header">
+                    <div class="header-title">
+                        <h1><i class="fas fa-caret-right icon-arrow"></i> Phản hồi người dùng </h1>
+                    </div>
+               </div>
+               <div class="comment comment-body">
+                    <div class="body-table">
+                        <table>
+                            <tr>
+                                <td> Tác giả </td>
+                                <td> Bình luận </td>
+                                <td> Trả lời </td>
+                                <td> Chức năng </td>
+                            </tr>
+                            <tr>
+                                <td> admin </td>
+                                <td> demo </td>
+                                <td><a href="./comment-aws.html"> trả lời </a></td>
+                                <td><a href="./comment-del.html"><i class="fas fa-trash icon-trash"></i></a></td>
+                            </tr>
+                        </table>
+                    </div>
+               </div>
+           </div>
+        </section>
+{%endblock content%}

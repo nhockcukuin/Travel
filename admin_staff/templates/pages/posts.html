@@ -1,0 +1,51 @@
+{% extends 'pages/main.html' %}
+
+
+{%block content%}
+    <section class="content content-defalut">
+            <div class="container container-posts">
+                <div class="posts posts-header">
+                    <div class="header header-title"> 
+                        <h1><i class="fas fa-caret-right icon-arrow"></i> Bài viết của tôi </h1>
+                    </div>
+                    <div class="header header-createnew-search">
+                        <div class="box createnew-box">
+                            <a href="{%url 'create_post'%}"> Tạo bài viết </a>
+                        </div>
+                        <div class="box search-box"> 
+                            <form action=""> 
+                                <input type="text" name="">
+                                <button type="submit" name="submit"><i class="fas fa-search icon-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts posts-body">
+                    <div class="body body-listdatatable">
+                        <table>
+                            <tr>
+                                <td>Tiêu đề </td>
+                                <td> Thể loại </td>
+                                <td> Tác giả </td>
+                                <td> Thời gian </td>
+                                <td> Chức năng </td>
+                            </tr>
+                            {%for posts in posts%}
+                            <tr>
+                                <td>{{posts.title}}</td>
+                                <td>{{posts.category}}</td>
+                                <td>{{posts.user}}</td>
+                                <td>{{posts.date_create}}</td>
+                                <td>
+                                    <a href="{%url 'update_post' posts.id%}"><i class="fas fa-pen"></i></a>
+                                    <a href="{%url 'delete_post' posts.id%}"><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            {%endfor%}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{%endblock content%}
