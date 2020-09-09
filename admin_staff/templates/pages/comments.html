@@ -18,12 +18,14 @@
                                 <td> Trả lời </td>
                                 <td> Chức năng </td>
                             </tr>
+                            {%for cmt in cmt%}
                             <tr>
-                                <td> admin </td>
-                                <td> demo </td>
-                                <td><a href="./comment-aws.html"> trả lời </a></td>
-                                <td><a href="./comment-del.html"><i class="fas fa-trash icon-trash"></i></a></td>
+                                <td>{{cmt.user_cmt}}</td>
+                                <td>{{cmt.content_cmt}}</td>
+                                <td><a href="./comment-aws.html">Xem</a></td>
+                                <td><a href="{%url 'del_cmt' cmt.id%}"><i class="fas fa-trash icon-trash"></i></a></td>
                             </tr>
+                            {%endfor%}
                         </table>
                     </div>
                </div>

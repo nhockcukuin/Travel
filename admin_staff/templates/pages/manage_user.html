@@ -18,11 +18,13 @@
                             <td> Tài khoản </td>
                             <td> Chức năng </td>
                         </tr>
+                        {%for user in user%}
                         <tr>
-                           <td> 1 </td>
-                           <td> demo_user </td>
-                           <td><a href="./detail-user.html"> Chi Tiết </a></td>
+                           <td>{{user.id}}</td>
+                           <td>{{user.username}} </td>
+                           <td><a href="{%url 'view_user' user.id%}"> Chi Tiết </a></td>
                         </tr>
+                        {%endfor%}
                     </table>
                 </div>
             </div>

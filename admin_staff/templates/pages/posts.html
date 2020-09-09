@@ -13,9 +13,9 @@
                             <a href="{%url 'create_post'%}"> Tạo bài viết </a>
                         </div>
                         <div class="box search-box"> 
-                            <form action=""> 
-                                <input type="text" name="">
-                                <button type="submit" name="submit"><i class="fas fa-search icon-search"></i></button>
+                            <form action="" method="GET"> 
+                                {{postFilter.form}}
+                                <input name="" id="" class="btn btn-primary" type="submit" value="Tìm kiếm">
                             </form>
                         </div>
                     </div>

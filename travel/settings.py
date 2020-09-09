@@ -39,7 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'admin_staff.apps.AdminStaffConfig',
     'user_view.apps.UserViewConfig',
+    'crispy_forms',
+    'django_filters',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -129,3 +135,5 @@ STATICFILES_DIRS = [
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfile')
+
+CKEDITOR_UPLOAD_PATH = 'upload/'

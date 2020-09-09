@@ -1,0 +1,13 @@
+{% extends 'pages/main.html' %}
+
+{%block content%}
+<section class="content content-defalut">
+    <form method="POST" >
+        {%csrf_token%}
+        <h3>Bạn có muốn xóa bình luận này không</h3>
+        <input class="btn btn-danger" type="submit" value="Đồng ý">
+        <a href="{%url 'comments'%}" class="btn btn-primary">Trở lại</a>
+        
+    </form>
+</section>
+{% endblock %}

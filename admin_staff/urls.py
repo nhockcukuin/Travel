@@ -5,10 +5,14 @@ urlpatterns = [
     path("overview/",views.overview,name="overview"),
     path("manage_user",views.manageUser,name="manage_user"),
     path("post/",views.posts,name="posts"),
-    path("comments",views.comments,name="comments"),
+    path("comments/",views.comments,name="comments"),
     path("statistical",views.statistical,name="statistical"),
 
     path("create_post/",views.createPost,name="create_post"),
     path("edit_post/<str:pk>/",views.editPost,name="update_post"),
     path("delete_post/<str:pk>/",views.deletePost,name="delete_post"),
+
+    path("del_cmt/<str:pk>",views.deleteComment,name="del_cmt"),
+
+    path("view_user/<str:pk>/",views.viewUser,name="view_user"),
 ]
